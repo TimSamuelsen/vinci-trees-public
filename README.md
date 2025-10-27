@@ -95,7 +95,7 @@ sys     0m0.072s
 ```
 
 
-I ran these profiling steps on WSL2 running Ubuntu22, the system has the following specs:
+I ran these tests on WSL2 running Ubuntu22, WSL had the following resources:
 ```
 === CPU ===
 CPU(s):                               12
@@ -114,3 +114,4 @@ Future improvements
 - Better CLI. I kept this very simple, but it's not the most user friendly.
 - Improved error handling in `tree_generator.cc`. Currently I'm relying on the CLI to make sure that we have valid inputs, but if we wanted to expose the GenerateTrees function more widely we would want to handle the possibility of bad inputs.
 - Better testing. The current tests are barebones and do not use a testing framework for simplicity. For a real application we would want to integrate this with existing testing frameworks.
+- Improved performance for larger inputs. The current solution works well within the given bounds, but for larger inputs we might need a different approach.
