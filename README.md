@@ -94,7 +94,6 @@ user    0m0.150s
 sys     0m0.072s
 ```
 
-
 I ran these tests on WSL2 running Ubuntu22, WSL had the following resources:
 ```
 === CPU ===
